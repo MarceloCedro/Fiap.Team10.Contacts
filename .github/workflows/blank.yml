@@ -1,4 +1,4 @@
-name: Primeiro Workflow GitHub Actions
+name: First Workflow GitHub Actions
 
 # Controls when the workflow will run
 on:
