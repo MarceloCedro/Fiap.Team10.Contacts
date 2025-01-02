@@ -17,7 +17,6 @@ namespace Fiap.Team10.Contacts.CrossCutting.DependencyInjections
 
         public static IServiceCollection AddDbContextDependency(this IServiceCollection service, string connectionString)
         {
-            // Add services to the container.
             service.AddDbContext<ContactsDbContext>(options => options.UseMySql(connectionString,
                                                                new MySqlServerVersion(new Version(8, 0, 21)),
                                                                mySqlOptions => mySqlOptions.MigrationsAssembly("Contacts.Infrastructure")));
