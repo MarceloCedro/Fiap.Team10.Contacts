@@ -15,16 +15,21 @@ on:
 jobs:
   build-and-test:	
     name: Runnig the Job test
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: Step 1 - Keep Going
         uses: actions/checkout@v2
 
-      - name: Step 2 - Run a one-line script
-        run: echo Hello, world!
+      - name: Docker Login
+        uses: docker/login-action@v3.3.0
+        with:
+          username: maxcedro
+          password: ${{ secrets.DOCKERHUB_PASSWORD }}       
 
-      - name: Step 3 - Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
-          echo Hello guys.
+      - name: Build and push Docker images
+        uses: docker/build-push-action@v6.10.0
+        with:
+          context: ./Contacts.Presentation/
+          tags: 'latest'
+          push: true
+          
