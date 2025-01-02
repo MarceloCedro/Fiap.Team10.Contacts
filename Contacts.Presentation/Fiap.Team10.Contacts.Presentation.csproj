@@ -26,7 +26,7 @@
   </ItemGroup>
   
   <ItemGroup>
-    <ProjectReference Include="..\Fiap.Team10.Contacts.CrossCutting\Fiap.Team10.Contacts.CrossCutting.csproj" />
+    <ProjectReference Include="..\Contacts.CrossCutting\Fiap.Team10.Contacts.CrossCutting.csproj" />
   </ItemGroup>
 
   <ItemGroup>
