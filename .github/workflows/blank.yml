@@ -15,7 +15,7 @@ on:
 jobs:
   build-and-test:	
     name: Runnig the Job test
-    runs-on: ubuntu-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: Step 1 - Keep Going
         uses: actions/checkout@v2
