@@ -9,7 +9,7 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["Contacts.Presentation/Contacts.Presentation.csproj", "Contacts.Presentation/"]
+COPY ["Contacts.Presentation/Contacts1.Presentation.csproj", "Contacts.Presentation/"]
 COPY ["Contacts.Application/Contacts.Application.csproj", "Contacts.Application/"]
 COPY ["Contacts.Domain/Contacts.Domain.csproj", "Contacts.Domain/"]
 COPY ["Contacts.Infrastructure/Fiap.Team10.Contacts.Infrastructure.csproj", "Contacts.Infrastructure/"]
