@@ -15,7 +15,7 @@ on:
 jobs:
   build-and-test:	
     name: Runnig the Job test
-    runs-on: self-hosted
+    runs-on: ubuntu-hosted
     steps:
       - name: Step 1 - Keep Going
         uses: actions/checkout@v2
