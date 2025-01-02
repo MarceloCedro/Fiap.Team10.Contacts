@@ -12,7 +12,7 @@ WORKDIR /src
 COPY ["Contacts.Presentation/Contacts.Presentation.csproj", "Contacts.Presentation/"]
 COPY ["Contacts.Application/Contacts.Application.csproj", "Contacts.Application/"]
 COPY ["Contacts.Domain/Contacts.Domain.csproj", "Contacts.Domain/"]
-COPY ["Contacts.Infrastructure/Contacts.Infrastructure.csproj", "Contacts.Infrastructure/"]
+COPY ["Contacts.Infrastructure/Fiap.Team10.Contacts.Infrastructure.csproj", "Contacts.Infrastructure/"]
 RUN dotnet restore "./Contacts.Presentation/Contacts.Presentation.csproj"
 COPY . .
 WORKDIR "/src/Contacts.Presentation"
