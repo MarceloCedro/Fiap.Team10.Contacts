@@ -6,7 +6,6 @@ using Microsoft.EntityFrameworkCore;
 namespace Fiap.Team10.Contacts.Infrastructure.Repositories
 {
     public class ContactRepository : IContactRepository
-
     {
         private readonly ContactsDbContext _context;
 
