@@ -11,9 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.Team10.Contacts.Infras
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.Team10.Contacts.Presentation", "Contacts.Presentation\Fiap.Team10.Contacts.Presentation.csproj", "{87B95EC3-DE75-41F9-9A89-1650FDA8259E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.Team10.Contacts.Tests", "Contacts.Tests\Fiap.Team10.Contacts.Tests.csproj", "{1E25DF09-512E-42D4-BF1B-EEDDA0721AB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.Team10.Contacts.UnitTests", "Contacts.Tests\Fiap.Team10.Contacts.UnitTests.csproj", "{1E25DF09-512E-42D4-BF1B-EEDDA0721AB8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.Team10.Contacts.CrossCutting", "Contacts.CrossCutting\Fiap.Team10.Contacts.CrossCutting.csproj", "{04D594A4-4CB8-4E4B-874E-AF89F8B982CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.Team10.Contacts.IntegrationTests", "Fiap.Team10.Contacts.IntegrationTests\Fiap.Team10.Contacts.IntegrationTests.csproj", "{380665EF-BD80-4ECE-904D-D2D1AF9D8D3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{39D6393A-B421-4BA3-AF27-97D9ABB1A636}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,9 +49,17 @@ Global
 		{04D594A4-4CB8-4E4B-874E-AF89F8B982CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04D594A4-4CB8-4E4B-874E-AF89F8B982CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04D594A4-4CB8-4E4B-874E-AF89F8B982CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{380665EF-BD80-4ECE-904D-D2D1AF9D8D3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{380665EF-BD80-4ECE-904D-D2D1AF9D8D3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{380665EF-BD80-4ECE-904D-D2D1AF9D8D3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{380665EF-BD80-4ECE-904D-D2D1AF9D8D3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1E25DF09-512E-42D4-BF1B-EEDDA0721AB8} = {39D6393A-B421-4BA3-AF27-97D9ABB1A636}
+		{380665EF-BD80-4ECE-904D-D2D1AF9D8D3F} = {39D6393A-B421-4BA3-AF27-97D9ABB1A636}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C0B46047-C1F1-4DDA-A8D6-D589044835BF}

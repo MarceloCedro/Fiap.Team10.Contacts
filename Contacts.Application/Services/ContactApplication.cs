@@ -34,7 +34,7 @@ namespace Fiap.Team10.Contacts.Application.Services
             catch (Exception e)
             {
                 insertResult.Success = false;
-                insertResult.Message = $"Ocorreu um problema ao tentar inserir o registro. Erro: {e.Message}";
+                insertResult.Message = $"Ocorreu um problema ao tentar inserir o registro.";
                 _logger.LogError(insertResult.Message);
             }
 
@@ -71,7 +71,7 @@ namespace Fiap.Team10.Contacts.Application.Services
             catch (Exception e)
             {
                 updateResult.Success = false;
-                updateResult.Message = $"Ocorreu um problema ao tentar atualizar o registro. Erro: {e.Message}";
+                updateResult.Message = $"Ocorreu um problema ao tentar atualizar o registro.";
                 _logger.LogError(updateResult.Message);
             }
 
@@ -82,7 +82,7 @@ namespace Fiap.Team10.Contacts.Application.Services
         public async Task<IEnumerable<ContactDto>> GetAllContactsAsync()
         {
             try
-            {
+            {                
                 var contacts = await _contactService.GetAllAsync();
                 var contactDtos = new List<ContactDto>();
 

@@ -17,7 +17,7 @@ jobs:
     name: Runnig the Job test
     runs-on: ubuntu-latest
     steps:
-      - name: Step 1 - Keep Going
+      - name: Step 1 - Check Out
         uses: actions/checkout@v2
 
       - name: Setup .NET
@@ -44,5 +44,5 @@ jobs:
       - name: Build
         run: dotnet build --no-restore
 
-      - name: Test
+      - name: Unit and Integration Tests 
         run: dotnet test --no-build --verbosity normal         

@@ -38,7 +38,7 @@ namespace Fiap.Team10.Contacts.Tests.ApplicationTests
         {
             var expectedResponse = CommonTestData.GetResponseUpsertObject(false, true);
             var contactCreateDto = CommonTestData.GetInsertDtoObject();
-            _contactServiceMock.Setup(service => service.InsertAsync(It.IsAny<Contact>())).ThrowsAsync(new Exception("ERRO-SIMULADO"));
+            _contactServiceMock.Setup(service => service.InsertAsync(It.IsAny<Contact>())).ThrowsAsync(new Exception());
 
             var result = await _contactApplication.AddContactAsync(contactCreateDto);
 

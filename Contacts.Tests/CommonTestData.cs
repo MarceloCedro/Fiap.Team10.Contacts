@@ -30,7 +30,7 @@ namespace Fiap.Team10.Contacts.Tests
             var operationFail = insert ? "inserir" : "alterar";
             string message = success ?
                    $"Contato {operationSuccess} com sucesso." :
-                   $"Ocorreu um problema ao tentar {operationFail} o registro. Erro: ERRO-SIMULADO";
+                   $"Ocorreu um problema ao tentar {operationFail} o registro.";
 
             return new()
             {

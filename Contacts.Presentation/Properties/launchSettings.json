@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "Contacts.Fiap": {
+    "Contacts.Fiap.New": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",

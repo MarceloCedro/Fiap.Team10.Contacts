@@ -3,6 +3,7 @@ using Fiap.Team10.Contacts.Presentation.Logging;
 using Fiap.Team10.Contacts.Presentation.Middleware;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using Prometheus;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,7 +23,7 @@ builder.Logging.AddProvider(
 
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Autenticação", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "TechChallenge FIAP 2025 GO", Version = "v1" });
 
     var xmlFile = $"{System.Reflection.Assembly.GetExecutingAssembly().GetName().Name}.xml";
     var xmlPath = System.IO.Path.Combine(System.AppContext.BaseDirectory, xmlFile);
@@ -67,6 +68,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseListaUserMiddleware();
 
+app.UseHttpMetrics();
+app.MapMetrics();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
