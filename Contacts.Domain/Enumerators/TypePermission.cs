@@ -4,6 +4,7 @@
     {
         Admin,
         User,
-        Guest
+        Guest,
+        Banned
     }
 }
