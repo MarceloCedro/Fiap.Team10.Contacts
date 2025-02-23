@@ -66,6 +66,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseReDoc(c =>
+{
+    c.DocumentTitle = "REDOC API Documentation";
+    c.SpecUrl = "/swagger/v1/swagger.json";
+});
+
 app.UseListaUserMiddleware();
 
 app.UseHttpMetrics();
